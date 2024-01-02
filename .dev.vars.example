@@ -1,0 +1,5 @@
+SLACK_BOT_TOKEN=xoxb-bbbb
+SLACK_SIGNING_SECRET=xxxx
+ANIMAL_PREDICTION_API=https://zzzz.cognitiveservices.azure.com/customvision/v3.0/Prediction/aaaa/classify/iterations/iyashi/image
+ANIMAL_PREDICTION_API_KEY=yyyy
+IMAGE_UPLOADED_CHANNEL=C0DDDD

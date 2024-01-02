@@ -1,0 +1,24 @@
+display_information:
+  name: iyashi
+features:
+  bot_user:
+    display_name: iyashi
+    always_online: true
+oauth_config:
+  scopes:
+    bot:
+      - app_mentions:read
+      - channels:history
+      - chat:write
+      - files:read
+settings:
+  event_subscriptions:
+    bot_events:
+      - app_mention
+      - message.channels
+      - file_shared
+  interactivity:
+    is_enabled: true
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false
