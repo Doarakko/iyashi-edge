@@ -52,7 +52,7 @@ export default {
       await context.client.chat.postMessage({ text: url, channel: context.channelId, unfurl_links: true, unfurl_media: true });
     })
 
-	  app.event("file_shared", async ({ context, payload}) => {
+    app.event("file_shared", async ({ context, payload}) => {
       const channelId = payload.channel_id
       if(channelId !== env.IMAGE_UPLOADED_CHANNEL){
         return;
@@ -63,8 +63,8 @@ export default {
         return;
       }
 
-      const shares = fileRes.file?.shares?.private;
-      // const shares = fileRes.file?.shares?.public;
+      // const shares = fileRes.file?.shares?.private;
+      const shares = fileRes.file?.shares?.public;
       let messageTs = "";
       for (const sharesKey in shares) {
         if (shares[sharesKey][0].ts) {

@@ -1,0 +1,8 @@
+name = "iyashi-edge"
+main = "src/index.ts"
+compatibility_date = "2023-10-29"
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "iyashi"
+database_id = "xxxx-yyyy-zzzz"
