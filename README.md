@@ -53,7 +53,7 @@ Please create an issue if you have any animals you would like to see supported!
 
     ```shell
     npx wrangler d1 create iyashi
-    npx wrangler d1 execute iyashi --local --file=./schema.sql
+    npx wrangler d1 execute iyashi --file=./schema.sql
     ```
 
 1. Edit wrangler.toml
